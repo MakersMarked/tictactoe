@@ -1,0 +1,30 @@
+:root{
+    --bgc:rgb(255, 252, 211);
+    --square-bgc-hover:rgb(255, 254, 217);
+    --square-bgc:rgb(255, 253, 195);
+    background-color: var(--bgc);
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.selection {
+    height: 100px;
+    width: 100px;
+    border: solid 1px black;
+    background-color: var(--square-bgc);
+    font-size: 100%;
+}
+
+.selection:hover{
+    background-color: var(--square-bgc-hover);
+}
